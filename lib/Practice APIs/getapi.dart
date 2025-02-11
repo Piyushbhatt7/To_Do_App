@@ -11,6 +11,8 @@ class Getapi extends StatefulWidget {
 
 class _GetapiState extends State<Getapi> {
 
+  List posts = [];
+
   Future<void> fetchUsers() async
   {
     final url = Uri.parse("https://jsonplaceholder.typicode.com/posts");
@@ -38,9 +40,23 @@ class _GetapiState extends State<Getapi> {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return  Scaffold(
+      body: posts.isEmpty
+          ? const Center(
+        child: CircularProgressIndicator(),
+      )
+          : ListView.builder(
+          itemCount: posts.length,
+          itemBuilder: (context, index)
+          {
+            return ListTile(
+              title: Text(posts[index]['title']),
+              subtitle: Text(posts [index]['body']),
+            )
+          }
 
-    );
+    )
+    )
   }
 
 
