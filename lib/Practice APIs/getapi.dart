@@ -15,26 +15,29 @@ class _GetapiState extends State<Getapi> {
   {
     final url = Uri.parse("https: //jsonplaceholder.typeicode.com/posts");
 
-    try{
-
+    try {
       final response = await http.get(url);
-      if(response.statusCode == 200)
-        {
-          List data = jsonDecode(response.body);
-        }
+      if (response.statusCode == 200) {
+        List data = jsonDecode(response.body);
+      }
       else {
         print("Error: ${response.statusCode}");
       }
     }
-    catch(e)
-    {
+    catch (e) {
       print("Exception :  $e");
     }
   }
+
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
 
     );
+  }
+
+
+  void main() {
+    fetchUsers();
   }
 }
