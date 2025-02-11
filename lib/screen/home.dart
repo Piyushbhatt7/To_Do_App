@@ -20,7 +20,7 @@ class _HomeScreenState extends State<HomeScreen> {
           itemBuilder: (context, index){
           final user = users[index];
           final email = user['email'];
-          final name = user['name'];
+          final name = user['name']['first'];
 
         return ListTile(
           leading: CircleAvatar(child: Text('${index + 1}')),
