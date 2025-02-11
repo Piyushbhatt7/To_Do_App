@@ -43,6 +43,13 @@ class _PostapiState extends State<Postapi> {
       print("Exception: $e");
     }
   }
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    ccreatePost();
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
