@@ -27,4 +27,7 @@ class _HomeScreenState extends State<HomeScreen> {
 void fetchUsers()
 {
   print('Fetchusers called');
+  const url = 'https://randomuser.me/api/?results=5';
+  final uri = Uri.parse(url);
+  http.get(uri);
 }
