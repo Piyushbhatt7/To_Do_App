@@ -35,7 +35,7 @@ void fetchUsers() async
   final body = response.body;
   final json = jsonDecode(body);
   setState(() {
-    users = ['result'];
+    users = ['results'];
   });
   print('fetch user completed');
 }
