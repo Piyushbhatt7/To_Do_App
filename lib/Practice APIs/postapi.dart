@@ -18,7 +18,10 @@ class _PostapiState extends State<Postapi> {
 
   final body = jsonEncode({
 
-  })
+    "title": "Hello pussy",
+    "body": "This is for testing purpose",
+    "userId": 1
+  });
   @override
   Widget build(BuildContext context) {
     return Scaffold(
