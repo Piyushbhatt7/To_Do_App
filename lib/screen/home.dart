@@ -16,9 +16,9 @@ class _HomeScreenState extends State<HomeScreen> {
           title: Text("REST APIs call"),
         ),
       floatingActionButton:
-      FloatingActionButton(onPressed: (){
-
-      }),
+      FloatingActionButton(onPressed:
+          fetchUsers,
+          ),
     );
   }
 
