@@ -24,7 +24,7 @@ class _HomeScreenState extends State<HomeScreen> {
         return ListTile(
            title: Text(email),
         );
-      }),
+      },),
 
         appBar: AppBar(
           title: Text("REST APIs call"),
