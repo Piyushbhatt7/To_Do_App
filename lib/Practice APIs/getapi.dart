@@ -22,6 +22,9 @@ class _GetapiState extends State<Getapi> {
         {
           List data = jsonDecode(response.body);
         }
+      else {
+        print("Error: ${response.statusCode}")
+      }
     }
   }
   @override
