@@ -15,26 +15,33 @@ class _PostapiState extends State<Postapi> {
   Future<void> createPost () async
   {
     final url = Uri.parse("https://jsonplaceholder.typicode.com/posts");
-  }
 
-  final body = jsonEncode({
 
-    "title": "Hello pussy",
-    "body": "This is for testing purpose",
-    "userId": 1
-  });
+    final body = jsonEncode({
 
-  try {
+      "title": "Hello pussy",
+      "body": "This is for testing purpose",
+      "userId": 1
+    });
 
-    final response = await http.post(url,
-    headers: {"Content-Type": "application/json"},
-  body: body,
-    );
+    try {
+      final response = await http.post(url,
+        headers: {"Content-Type": "application/json"},
+        body: body,
+      );
 
-    if(response.statusCode == 201)
-  {
-    print("Post created: ${response.body}");
-  }
+      if (response.statusCode == 201) {
+        print("Post created: ${response.body}");
+      }
+
+      else {
+        print("Error: ${response.statusCode}");
+      }
+    }
+
+    catch (e) {
+      print("Exception: $e");
+    }
   }
   @override
   Widget build(BuildContext context) {
@@ -42,4 +49,9 @@ class _PostapiState extends State<Postapi> {
 
     );
   }
+}
+
+void main()
+{
+  createPost();
 }
