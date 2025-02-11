@@ -22,6 +22,7 @@ class _HomeScreenState extends State<HomeScreen> {
           final email = user['email'];
 
         return ListTile(
+          leading: Text('${index + 1}'),
            title: Text(email),
         );
       },),
