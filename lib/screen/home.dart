@@ -14,6 +14,11 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
+      body: ListView.builder(itemBuilder: (context, index){
+        return ListTile();
+      }),
+
         appBar: AppBar(
           title: Text("REST APIs call"),
         ),
@@ -21,6 +26,7 @@ class _HomeScreenState extends State<HomeScreen> {
       FloatingActionButton(onPressed:
           fetchUsers,
           ),
+
     );
   }
 
