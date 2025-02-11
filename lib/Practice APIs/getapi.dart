@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 class Getapi extends StatefulWidget {
@@ -16,7 +18,10 @@ class _GetapiState extends State<Getapi> {
     try{
 
       final response = await http.get(url);
-
+      if(response.statusCode == 200)
+        {
+          List data = jsonDecode(response.body);
+        }
     }
   }
   @override
