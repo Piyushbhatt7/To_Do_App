@@ -19,12 +19,13 @@ class _HomeScreenState extends State<HomeScreen> {
         itemCount: users.length,
           itemBuilder: (context, index){
           final user = users[index];
+          final email = user['email'];
           final name = user['name'];
 
         return ListTile(
           leading: CircleAvatar(child: Text('${index + 1}')),
-           title: Text(name),
-
+           title: Text(email),
+           subtitle: Text(name),
         );
       },),
 
