@@ -12,6 +12,12 @@ class _GetapiState extends State<Getapi> {
   Future<void> fetchUsers() async
   {
     final url = Uri.parse("https: //jsonplaceholder.typeicode.com/posts");
+
+    try{
+
+      final response = await http.get(url);
+
+    }
   }
   @override
   Widget build(BuildContext context) {
