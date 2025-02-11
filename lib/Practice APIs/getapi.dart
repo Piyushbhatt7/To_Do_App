@@ -28,7 +28,7 @@ class _GetapiState extends State<Getapi> {
     }
     catch(e)
     {
-      print("Exception : " $e);
+      print("Exception :  $e");
     }
   }
   @override
