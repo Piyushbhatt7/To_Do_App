@@ -27,7 +27,7 @@ class _PostapiState extends State<Postapi> {
   try {
 
     final response = await http.post(url,
-
+    headers: {"Content-Type": "application/json"}
     );
   }
   @override
