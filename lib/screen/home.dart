@@ -12,7 +12,19 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        appBar: AppBar(
+          title: Text("REST APIs call"),
+        ),
+      floatingActionButton:
+      FloatingActionButton(onPressed: (){
 
+      }),
     );
   }
+
+}
+
+void fetchUsers()
+{
+  print('Fetchusers called');
 }
