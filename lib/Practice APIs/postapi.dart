@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
 
 class Postapi extends StatefulWidget {
   const Postapi({super.key});
@@ -22,6 +23,13 @@ class _PostapiState extends State<Postapi> {
     "body": "This is for testing purpose",
     "userId": 1
   });
+
+  try {
+
+    final response = await http.post(url,
+
+    );
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
