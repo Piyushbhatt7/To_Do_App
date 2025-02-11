@@ -1,5 +1,4 @@
 import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
@@ -11,6 +10,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  List<dynamic> users = [];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,7 +24,7 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-}
+
 
 void fetchUsers() async
 {
@@ -33,5 +33,10 @@ void fetchUsers() async
   final uri = Uri.parse(url);
   final response = await http.get(uri);
   final body = response.body;
-  jsonDecode(body);
+  final json = jsonDecode(body);
+  setState(() {
+    users = ['result'];
+  });
+  
+}
 }
