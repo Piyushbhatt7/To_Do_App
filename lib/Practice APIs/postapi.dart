@@ -48,17 +48,14 @@ class _PostapiState extends State<Postapi> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    ccreatePost();
+    createPost();
   }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
 
+      body: Center(child: Text("Posting Data...")),
     );
   }
 }
 
-void main()
-{
-  createPost();
-}
