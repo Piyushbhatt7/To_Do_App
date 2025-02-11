@@ -21,7 +21,7 @@ class _GetapiState extends State<Getapi> {
       final response = await http.get(url);
       if (response.statusCode == 200) {
         setState(() {
-          posts = jsonDecode(response.body);
+          posts = jsonDecode(response.body)['posts'];
         });
       }
 
