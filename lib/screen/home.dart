@@ -15,8 +15,14 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
 
-      body: ListView.builder(itemBuilder: (context, index){
-        return ListTile();
+      body: ListView.builder(
+        itemCount: users.length,
+          itemBuilder: (context, index){
+          final user = users[index];
+
+        return ListTile(
+
+        );
       }),
 
         appBar: AppBar(
