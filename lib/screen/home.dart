@@ -29,5 +29,7 @@ void fetchUsers() async
   print('Fetchusers called');
   const url = 'https://randomuser.me/api/?results=5';
   final uri = Uri.parse(url);
-  await http.get(uri);
+  final response = await http.get(uri);
+  final body = response.body;
+
 }
