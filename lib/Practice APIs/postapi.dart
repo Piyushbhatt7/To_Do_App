@@ -27,8 +27,14 @@ class _PostapiState extends State<Postapi> {
   try {
 
     final response = await http.post(url,
-    headers: {"Content-Type": "application/json"}
+    headers: {"Content-Type": "application/json"},
+  body: body,
     );
+
+    if(response.statusCode == 201)
+  {
+    print("Post created: ${response.body}");
+  }
   }
   @override
   Widget build(BuildContext context) {
