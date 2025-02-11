@@ -21,7 +21,7 @@ class _HomeScreenState extends State<HomeScreen> {
           final user = users[index];
 
         return ListTile(
-
+           title: Text(data),
         );
       }),
 
