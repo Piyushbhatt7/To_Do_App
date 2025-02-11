@@ -52,11 +52,11 @@ class _GetapiState extends State<Getapi> {
             return ListTile(
               title: Text(posts[index]['title']),
               subtitle: Text(posts [index]['body']),
-            )
+            );
           }
 
     )
-    )
+    );
   }
 
 
