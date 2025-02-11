@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
@@ -31,5 +33,5 @@ void fetchUsers() async
   final uri = Uri.parse(url);
   final response = await http.get(uri);
   final body = response.body;
-
+  jsonDecode(body);
 }
