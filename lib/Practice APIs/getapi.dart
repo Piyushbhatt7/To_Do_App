@@ -13,7 +13,7 @@ class _GetapiState extends State<Getapi> {
 
   Future<void> fetchUsers() async
   {
-    final url = Uri.parse("https: //jsonplaceholder.typeicode.com/posts");
+    final url = Uri.parse("https://jsonplaceholder.typicode.com/posts");
 
     try {
       final response = await http.get(url);
@@ -30,8 +30,15 @@ class _GetapiState extends State<Getapi> {
   }
 
   @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    fetchUsers();
+  }
+
+  @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
 
     );
   }
