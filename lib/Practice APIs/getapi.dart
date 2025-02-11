@@ -15,7 +15,7 @@ class _GetapiState extends State<Getapi> {
 
   Future<void> fetchUsers() async
   {
-    final url = Uri.parse("https://catfact.ninja/fact");
+    final url = Uri.parse("https://dummyjson.com/posts");
 
     try {
       final response = await http.get(url);
