@@ -15,13 +15,17 @@ class _GetapiState extends State<Getapi> {
 
   Future<void> fetchUsers() async
   {
-    final url = Uri.parse("https://jsonplaceholder.typicode.com/posts");
+    final url = Uri.parse("https://catfact.ninja/fact");
 
     try {
       final response = await http.get(url);
       if (response.statusCode == 200) {
-        List data = jsonDecode(response.body);
+        setState(() {
+          posts = jsonDecode(response.body);
+        });
       }
+
+
       else {
         print("Error: ${response.statusCode}");
       }
@@ -60,7 +64,7 @@ class _GetapiState extends State<Getapi> {
   }
 
 
-  void main() {
-    fetchUsers();
-  }
-}
+ // void main() {
+ //   fetchUsers();
+ // }
+ }
