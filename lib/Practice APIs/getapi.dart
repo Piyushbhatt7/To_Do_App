@@ -55,7 +55,9 @@ class _GetapiState extends State<Getapi> {
           {
             return ListTile(
               title: Text(posts[index]['title']),
-              subtitle: Text(posts [index]['id'].toString()),
+              subtitle: CircleAvatar(
+                child: Text(posts [index]['id'].toString()),
+              )
             );
           }
 
