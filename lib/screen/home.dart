@@ -25,7 +25,7 @@ class _HomeScreenState extends State<HomeScreen> {
         return ListTile(
           leading: CircleAvatar(child: Text('${index + 1}')),
            title: Text(email),
-           subtitle: Text(name),
+           subtitle: Text(name.toString()),
         );
       },),
 
