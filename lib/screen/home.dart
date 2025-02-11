@@ -19,9 +19,10 @@ class _HomeScreenState extends State<HomeScreen> {
         itemCount: users.length,
           itemBuilder: (context, index){
           final user = users[index];
+          final email = user['email'];
 
         return ListTile(
-           title: Text(data),
+           title: Text(email),
         );
       }),
 
