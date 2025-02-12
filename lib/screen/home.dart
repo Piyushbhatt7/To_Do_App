@@ -56,8 +56,9 @@ void fetchUsers() async
   final response = await http.get(uri);
   final body = response.body;
   final json = jsonDecode(body);
+  final results = json['results'];
   setState(() {
-    users = json['results'];
+    users = results;
   });
   print('fetch user completed');
 }
