@@ -12,7 +12,7 @@ class Postapi extends StatefulWidget {
 
 class _PostapiState extends State<Postapi> {
 
-  String responseMessage = "SEnding Data....";
+  String responseMessage = "Sending Data...";
 
 
   Future<void> createPost () async
@@ -37,7 +37,7 @@ class _PostapiState extends State<Postapi> {
       if (response.statusCode == 201) {
 
         setState(() {
-          print("Post created: ${response.body}");
+          print("Post created Sucessfully: \n${response.body}");
         });
 
       }
