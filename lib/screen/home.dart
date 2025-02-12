@@ -21,6 +21,7 @@ class _HomeScreenState extends State<HomeScreen> {
           final user = users[index];
           final email = user['email'];
           final name = user['name']['first'];
+          final imageUrl = user['picture']['thumbnail'];
 
         return ListTile(
           leading: CircleAvatar(child: Text('${index + 1}')),
