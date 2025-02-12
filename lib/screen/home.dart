@@ -57,10 +57,17 @@ void fetchUsers() async
   final body = response.body;
   final json = jsonDecode(body);
   final results = json['results'] as List<dynamic>;
+  final transform = results.map((e) {
+    return User(
+      cell: e['cell'],
+      email: e['email'],
+      phone: e['phone'],
+      gender: e['gender'],
+      nat: e['nat']
+    );
+  }).toList();
   setState(() {
-    users = results.map((e){
-      return User();
-    }).toList();
+    users = transform;
   });
   print('fetch user completed');
 }
