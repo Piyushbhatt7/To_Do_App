@@ -52,6 +52,9 @@ class _PostapiState extends State<Postapi> {
     }
 
     catch (e) {
+      setState(() {
+
+      });
       print("Exception: $e");
     }
   }
