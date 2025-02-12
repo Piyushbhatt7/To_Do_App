@@ -37,9 +37,9 @@ class _PostapiState extends State<Postapi> {
       if (response.statusCode == 201) {
 
         setState(() {
-
+          print("Post created: ${response.body}");
         });
-        print("Post created: ${response.body}");
+
       }
 
       else {
