@@ -22,8 +22,8 @@ class _HomeScreenState extends State<HomeScreen> {
           itemBuilder: (context, index){
           final user = users[index];
           final email = user.email;
-          final color = user.gender == 'male' ? Colors.blue : Colors.grey;
-          final total = user.total;
+          final color = user.gender == 'male' ? Colors.blue.shade100 : Colors.pink.shade100;
+         // final total = user.total;
 
 
         return ListTile(
@@ -34,8 +34,11 @@ class _HomeScreenState extends State<HomeScreen> {
          // ),
            title: Text(email),
            tileColor: color,
-           subtitle: Text(user.total.toString()),
+          // subtitle: Text(user.total.toString()),
            //subtitle: Text(name.toString()),
+          leading: CircleAvatar(
+            backgroundImage: NetworkImage(user.picture),
+          ),
         );
       },),
 
@@ -68,7 +71,8 @@ void fetchUsers() async
       phone: e['phone'],
       gender: e['gender'],
       nat: e['nat'],
-        total: e['total']
+      picture: e['picture']['large'],
+
     );
   }).toList();
   setState(() {
