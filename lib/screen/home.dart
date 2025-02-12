@@ -21,7 +21,8 @@ class _HomeScreenState extends State<HomeScreen> {
         itemCount: users.length,
           itemBuilder: (context, index){
           final user = users[index];
-          final email = user.name.first;
+          final names = user.name.first;
+          final email = user.email;
           final color = user.gender == 'male' ? Colors.blue.shade100 : Colors.pink.shade100;
          // final total = user.total;
 
@@ -32,8 +33,9 @@ class _HomeScreenState extends State<HomeScreen> {
          //   borderRadius: BorderRadius.circular(100),
          //   child: Image.network(imageUrl),
          // ),
-           title: Text(email),
+           title: Text(names),
            tileColor: color,
+          subtitle: Text(email),
           // subtitle: Text(user.total.toString()),
            //subtitle: Text(name.toString()),
           leading: CircleAvatar(
