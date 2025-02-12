@@ -32,6 +32,7 @@ class _HomeScreenState extends State<HomeScreen> {
          //   child: Image.network(imageUrl),
          // ),
            title: Text(email),
+           tileColor: color,
            //subtitle: Text(name.toString()),
         );
       },),
