@@ -69,7 +69,9 @@ class _PostapiState extends State<Postapi> {
   Widget build(BuildContext context) {
     return Scaffold(
 
-      body: Center(child: Text("Posting Data...")),
+      body: Center(
+        child: Padding(padding: ),
+      )
 
     );
   }
