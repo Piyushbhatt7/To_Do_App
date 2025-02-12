@@ -51,6 +51,13 @@ class _PutapiState extends State<Putapi> {
        responseMessage = "Exception occures: $e";
     }
   }
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    updatePost();
+  }
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
