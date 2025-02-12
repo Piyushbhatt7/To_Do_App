@@ -45,7 +45,7 @@ class _PostapiState extends State<Postapi> {
       else {
 
         setState(() {
-          print("Error: ${response.statusCode}");
+          responseMessage = "Error: ${response.statusCode}";
         });
 
       }
