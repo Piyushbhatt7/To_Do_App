@@ -10,6 +10,9 @@ class User {
 
      required this.gender,
      required this.email,
+     required this.phone,
+     required this.cell,
+     required this.nat,
 });
 
 }
