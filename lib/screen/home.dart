@@ -65,6 +65,13 @@ void fetchUsers() async
   final json = jsonDecode(body);
   final results = json['results'] as List<dynamic>;
   final transform = results.map((e) {
+    
+    final name = UserName(
+       last: e['user']['title'],
+        title: e['user']['first'],
+        first: e['user']['last'],
+
+    );
     return User(
       cell: e['cell'],
       email: e['email'],

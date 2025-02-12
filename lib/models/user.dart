@@ -7,6 +7,7 @@ class User {
    final String nat;
   // final String total;
    final String picture;
+   final UserName name;
    User ({
 
      required this.gender,
@@ -14,6 +15,7 @@ class User {
      required this.phone,
      required this.cell,
      required this.nat,
+     required this.name,
    //  required this.total
      required this.picture,
 });
