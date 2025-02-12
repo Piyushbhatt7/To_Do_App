@@ -12,7 +12,7 @@ class _PutapiState extends State<Putapi> {
   String responseMessage = "Updating post...";
 
   Future<void> updatePost () async {
-
+         final url = Uri.parse("Https:// jsonplaceholder.typicode.com/posts/1");
   }
   @override
   Widget build(BuildContext context) {
