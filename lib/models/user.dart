@@ -5,6 +5,7 @@ class User {
    final String phone;
    final String cell;
    final String nat;
+   final String total;
 
    User ({
 
@@ -13,6 +14,7 @@ class User {
      required this.phone,
      required this.cell,
      required this.nat,
+     required this.total
 });
 
 }

@@ -23,6 +23,7 @@ class _HomeScreenState extends State<HomeScreen> {
           final user = users[index];
           final email = user.email;
           final color = user.gender == 'male' ? Colors.blue : Colors.grey;
+          final total = user.total;
 
 
         return ListTile(
@@ -33,7 +34,7 @@ class _HomeScreenState extends State<HomeScreen> {
          // ),
            title: Text(email),
            tileColor: color,
-           subtitle: Text(user.phone),
+           subtitle: Text(user.total.toString()),
            //subtitle: Text(name.toString()),
         );
       },),
@@ -66,7 +67,8 @@ void fetchUsers() async
       email: e['email'],
       phone: e['phone'],
       gender: e['gender'],
-      nat: e['nat']
+      nat: e['nat'],
+        total: e['total']
     );
   }).toList();
   setState(() {
