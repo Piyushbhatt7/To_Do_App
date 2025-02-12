@@ -33,6 +33,7 @@ class _HomeScreenState extends State<HomeScreen> {
          // ),
            title: Text(email),
            tileColor: color,
+           subtitle: Text(user.phone),
            //subtitle: Text(name.toString()),
         );
       },),
