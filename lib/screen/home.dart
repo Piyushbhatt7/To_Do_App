@@ -22,17 +22,16 @@ class _HomeScreenState extends State<HomeScreen> {
           itemBuilder: (context, index){
           final user = users[index];
           final email = user.email;
-          final name = user.;
-          final imageUrl = user['picture']['thumbnail'];
+
 
         return ListTile(
           //leading: CircleAvatar(child: Text('${index + 1}')),
-          leading: ClipRRect(
-            borderRadius: BorderRadius.circular(100),
-            child: Image.network(imageUrl),
-          ),
+         // leading: ClipRRect(
+         //   borderRadius: BorderRadius.circular(100),
+         //   child: Image.network(imageUrl),
+         // ),
            title: Text(email),
-           subtitle: Text(name.toString()),
+           //subtitle: Text(name.toString()),
         );
       },),
 
