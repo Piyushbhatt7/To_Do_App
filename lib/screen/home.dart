@@ -79,6 +79,7 @@ void fetchUsers() async
       gender: e['gender'],
       nat: e['nat'],
       picture: e['picture']['large'],
+      name: name,
 
     );
   }).toList();
