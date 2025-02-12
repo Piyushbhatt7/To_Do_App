@@ -38,6 +38,12 @@ class _PutapiState extends State<Putapi> {
 
                });
              }
+
+           else {
+             setState(() {
+               responseMessage = "Error: ${response.statusCode}";
+             });
+           }
          }
   }
   @override
