@@ -21,7 +21,7 @@ class _HomeScreenState extends State<HomeScreen> {
         itemCount: users.length,
           itemBuilder: (context, index){
           final user = users[index];
-          final email = user.email;
+          final email = user.name.first;
           final color = user.gender == 'male' ? Colors.blue.shade100 : Colors.pink.shade100;
          // final total = user.total;
 
