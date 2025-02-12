@@ -22,7 +22,7 @@ class _PostapiState extends State<Postapi> {
 
     final body = jsonEncode({
 
-      "title": "Hello pussy",
+      "title": "Hello Test Post",
       "body": "This is for testing purpose",
       "userId": 1
     });
@@ -37,7 +37,7 @@ class _PostapiState extends State<Postapi> {
       if (response.statusCode == 201) {
 
         setState(() {
-          print("Post created Sucessfully: \n${response.body}");
+          responseMessage = "Post created sucessfully: \n${response.body}";
         });
 
       }
@@ -84,4 +84,6 @@ class _PostapiState extends State<Postapi> {
     );
   }
 }
+
+
 
