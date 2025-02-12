@@ -27,6 +27,7 @@ class _HomeScreenState extends State<HomeScreen> {
           //leading: CircleAvatar(child: Text('${index + 1}')),
           leading: ClipRRect(
             borderRadius: BorderRadius.circular(100),
+            child: Image.network(imageUrl),
           ),
            title: Text(email),
            subtitle: Text(name.toString()),
