@@ -45,17 +45,17 @@ class _PostapiState extends State<Postapi> {
       else {
 
         setState(() {
-
+          print("Error: ${response.statusCode}");
         });
-        print("Error: ${response.statusCode}");
+
       }
     }
 
     catch (e) {
       setState(() {
-
+        print("Exception: $e");
       });
-      print("Exception: $e");
+
     }
   }
 
