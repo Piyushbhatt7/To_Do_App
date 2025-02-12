@@ -12,6 +12,9 @@ class Postapi extends StatefulWidget {
 
 class _PostapiState extends State<Postapi> {
 
+  String responseMessage = "SEnding Data....";
+
+
   Future<void> createPost () async
   {
     final url = Uri.parse("https://jsonplaceholder.typicode.com/posts");
@@ -25,7 +28,8 @@ class _PostapiState extends State<Postapi> {
     });
 
     try {
-      final response = await http.post(url,
+      final response = await http.post(
+        url,
         headers: {"Content-Type": "application/json"},
         body: body,
       );
