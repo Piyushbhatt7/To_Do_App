@@ -56,6 +56,7 @@ class _PutapiState extends State<Putapi> {
     return  Scaffold(
       body: Center(
         child: Text(
+          textAlign: TextAlign.center,
           responseMessage,
           style: TextStyle(
             fontWeight: FontWeight.bold,
