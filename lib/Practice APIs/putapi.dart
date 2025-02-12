@@ -19,7 +19,7 @@ class _PutapiState extends State<Putapi> {
          final body = jsonEncode({
            "id": 1,
            "title": "updating pussy to cat",
-           "body": "Pussy looks an inappropiate name",
+           "body": "Pussy looks an bad name",
            "userId": 3
          });
 
