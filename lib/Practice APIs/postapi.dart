@@ -72,7 +72,13 @@ class _PostapiState extends State<Postapi> {
       body: Center(
         child: Padding(
             padding: const EdgeInsets.all(16.0),
-          child: Text(responseMessage),
+          child: Text(
+              responseMessage,
+            textAlign: TextAlign.center,
+            style: const TextStyle(
+              fontSize: 16, fontWeight: FontWeight.bold
+            ),
+          ),
         ),
       )
 
