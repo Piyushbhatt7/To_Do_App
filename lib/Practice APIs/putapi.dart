@@ -22,6 +22,23 @@ class _PutapiState extends State<Putapi> {
            "body": "Pussy looks an inappropiate name",
            "userId": 3
          });
+
+         try {
+
+           final response = await http.put(
+               url,
+           headers: {"Content-Type": "application/json"},
+               body : body,
+           );
+
+           if(response.statusCode == 200)
+             {
+               setState(() {
+                 responseMessage = "Post updated successfully: \n${response.body}";
+
+               });
+             }
+         }
   }
   @override
   Widget build(BuildContext context) {
