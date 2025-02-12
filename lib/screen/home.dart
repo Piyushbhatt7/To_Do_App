@@ -67,9 +67,9 @@ void fetchUsers() async
   final transform = results.map((e) {
     
     final name = UserName(
-       last: e['user']['title'],
-        title: e['user']['first'],
-        first: e['user']['last'],
+       last: e['name']['title'],
+        title: e['name']['first'],
+        first: e['name']['last'],
 
     );
     return User(
