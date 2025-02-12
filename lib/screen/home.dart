@@ -56,9 +56,11 @@ void fetchUsers() async
   final response = await http.get(uri);
   final body = response.body;
   final json = jsonDecode(body);
-  final results = json['results'];
+  final results = json['results'] as List<dynamic>;
   setState(() {
-    users = results;
+    users = results.map((e){
+      return User();
+    }).toList();
   });
   print('fetch user completed');
 }
