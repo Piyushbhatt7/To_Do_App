@@ -70,7 +70,9 @@ class _PostapiState extends State<Postapi> {
     return Scaffold(
 
       body: Center(
-        child: Padding(padding: ),
+        child: Padding(
+            padding: const EdgeInsets.all(16.0)
+        ),
       )
 
     );
