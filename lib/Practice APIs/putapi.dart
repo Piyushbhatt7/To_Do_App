@@ -45,9 +45,24 @@ class _PutapiState extends State<Putapi> {
              });
            }
          }
+
+         catch (e)
+    {
+       responseMessage = "Exception occures: $e";
+    }
   }
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return  Scaffold(
+      body: Center(
+        child: Text(
+          responseMessage,
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+
+          ),
+        ),
+      ),
+    );
   }
 }
