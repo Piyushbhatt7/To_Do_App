@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 class Putapi extends StatefulWidget {
@@ -13,6 +15,13 @@ class _PutapiState extends State<Putapi> {
 
   Future<void> updatePost () async {
          final url = Uri.parse("https://jsonplaceholder.typicode.com/posts/1");
+
+         final body = jsonEncode({
+           "id": 1,
+           "title": "updating pussy to cat",
+           "body": "Pussy looks an inappropiate name",
+           "userId": 3
+         });
   }
   @override
   Widget build(BuildContext context) {
