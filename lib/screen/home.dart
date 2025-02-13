@@ -14,6 +14,13 @@ class _HomeScreenState extends State<HomeScreen> {
   List<User> users = [];
 
   @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    fetchUsers();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
 
@@ -47,10 +54,7 @@ class _HomeScreenState extends State<HomeScreen> {
         appBar: AppBar(
           title: Text("REST APIs call"),
         ),
-      floatingActionButton:
-      FloatingActionButton(onPressed:
-          fetchUsers,
-          ),
+
 
     );
   }
