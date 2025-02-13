@@ -22,5 +22,10 @@ class User {
      required this.picture,
 });
 
+   String get fullName {
+
+     return '${name.title} ${name.first} ${name.last}';
+   }
+
 }
 
