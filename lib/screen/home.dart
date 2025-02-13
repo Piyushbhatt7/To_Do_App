@@ -43,7 +43,7 @@ class _HomeScreenState extends State<HomeScreen> {
          //   borderRadius: BorderRadius.circular(100),
          //   child: Image.network(imageUrl),
          // ),
-           title: Text(names),
+           title: Text(user.fullName),
            tileColor: color,
           subtitle: Text(email),
           // subtitle: Text(user.total.toString()),
