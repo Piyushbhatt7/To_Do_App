@@ -1,6 +1,9 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 
+import '../models/user.dart';
+import '../models/user_name.dart';
+
 class UserApi {
 
 
@@ -32,9 +35,9 @@ class UserApi {
 
       );
     }).toList();
-    setState(() {
-      users = transform;
-    });
+
+    //  users = transform;
+
     print('fetch user completed');
   }
 
