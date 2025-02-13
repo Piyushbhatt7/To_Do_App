@@ -7,7 +7,7 @@ import '../models/user_name.dart';
 class UserApi {
 
 
-  Future<void> fetchUsers() async
+  Future<List<void>> fetchUsers() async
   {
     print('Fetchusers called');
     const url = 'https://randomuser.me/api/?results=50';
@@ -16,7 +16,7 @@ class UserApi {
     final body = response.body;
     final json = jsonDecode(body);
     final results = json['results'] as List<dynamic>;
-    final transform = results.map((e) {
+    final user = results.map((e) {
 
       final name = UserName(
         last: e['name']['title'],
@@ -37,9 +37,9 @@ class UserApi {
     }).toList();
 
     //  users = transform;
+    return user;
 
-    print('fetch user completed');
+
   }
 
-}
 }
