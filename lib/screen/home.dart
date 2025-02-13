@@ -61,7 +61,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
 
 
-void fetchUsers() async
+Future<void> fetchUsers() async
 {
   print('Fetchusers called');
   const url = 'https://randomuser.me/api/?results=50';
