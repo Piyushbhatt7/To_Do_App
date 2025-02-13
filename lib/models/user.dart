@@ -1,3 +1,5 @@
+import 'package:to_do/models/user_name.dart';
+
 class User {
 
    final String gender;
@@ -22,15 +24,3 @@ class User {
 
 }
 
-class UserName {
-
-  final String title;
-  final String first;
-  final String last;
-
-  UserName({
-    required this.title,
-    required this.first,
-    required this.last,
-});
-}
