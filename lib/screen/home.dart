@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:to_do/models/user.dart';
+import 'package:to_do/services/user_api.dart';
 
 import '../models/user_name.dart';
 
@@ -59,6 +60,12 @@ class _HomeScreenState extends State<HomeScreen> {
 
 
     );
+  }
+
+  Future<void> fetchUsers() async
+  {
+    final users = await UserApi.fetchUsers();
+  }
   }
 
 

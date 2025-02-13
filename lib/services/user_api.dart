@@ -7,9 +7,9 @@ import '../models/user_name.dart';
 class UserApi {
 
 
-  Future<List<void>> fetchUsers() async
+  static Future<List<void>> fetchUsers() async
   {
-    print('Fetchusers called');
+   // print('Fetchusers called');
     const url = 'https://randomuser.me/api/?results=50';
     final uri = Uri.parse(url);
     final response = await http.get(uri);
