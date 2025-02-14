@@ -4,6 +4,7 @@ class UserLocation {
   final String state;
   final String country;
   final String postcode;
+  final LocationStreet street;
   final LocationCoordinate coordinates;
   final LocationTimezoneCoordinate timezone;
 
@@ -11,4 +12,10 @@ class UserLocation {
 
 class LocationCoordinate {
 
+  final int number;
+  final String name;
 }
+
+class LocationTimezoneCoordinate {}
+
+class LocationStreet{}
