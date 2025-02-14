@@ -5,7 +5,7 @@ class UserLocation {
   final String country;
   final String postcode;
   final LocationCoordinate coordinates;
-  final String city;
+  final LocationTimezoneCoordinate timezone;
 
 }
 
