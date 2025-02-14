@@ -33,5 +33,8 @@ class LocationCoordinate {
 });
 }
 
-class LocationTimezoneCoordinate {}
+class LocationTimezoneCoordinate {
+
+  final
+}
 
