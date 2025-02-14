@@ -22,7 +22,7 @@ class User {
      required this.name,
    //  required this.total
      required this.picture,
-     required this.date,
+     required this.date, required UserDob dob,
 });
 
    String get fullName {

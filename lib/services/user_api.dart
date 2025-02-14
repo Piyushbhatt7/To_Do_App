@@ -28,7 +28,8 @@ class UserApi {
       final date = e['dob']['date'];
       final dob = UserDob(
           age: e['dob']['age'],
-          date: DateTime.parse(date);
+          date: DateTime.parse(date),
+      );
       return User(
         cell: e['cell'],
         email: e['email'],
@@ -37,7 +38,7 @@ class UserApi {
         nat: e['nat'],
         picture: e['picture']['large'],
         name: name,
-        date:
+        dob: dob
 
       );
     }).toList();
