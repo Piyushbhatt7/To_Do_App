@@ -12,7 +12,7 @@ class UserLocation {
 
 class LocationCoordinate {
 
-
+    final String latitude;
 
   LocationCoordinate({
 
