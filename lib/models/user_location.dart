@@ -11,6 +11,7 @@ class UserLocation {
   UserLocation({
 
     required this.city,
+    required this.state
 })
 
 }
