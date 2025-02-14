@@ -45,7 +45,7 @@ class _HomeScreenState extends State<HomeScreen> {
          // ),
            title: Text(user.fullName),
            tileColor: color,
-          subtitle: Text(user.location.coordinates.longitude),
+          subtitle: Text(user.location.timezone.offset),
           // subtitle: Text(user.total.toString()),
            //subtitle: Text(name.toString()),
           leading: CircleAvatar(
