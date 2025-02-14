@@ -37,8 +37,8 @@ class UserApi {
           country: e['location']['country'],
           postcode: e['location']['postcode'],
           street: e['location']['street'],
-          coordinates: ['coordinates'],
-          timezone: ['timezone']
+          coordinates: e['location']['coordinates'],
+          timezone: e['location']['timezone']
       )
       return User(
         cell: e['cell'],
