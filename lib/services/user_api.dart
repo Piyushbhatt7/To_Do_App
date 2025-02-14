@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
+import 'package:to_do/models/user_dob.dart';
 
 import '../models/user.dart';
 import '../models/user_name.dart';
@@ -24,6 +25,7 @@ class UserApi {
         first: e['name']['last'],
 
       );
+      final dob = UserDob(age: e['dob']['age'], date: e['dob']['date']);
       return User(
         cell: e['cell'],
         email: e['email'],
@@ -32,6 +34,7 @@ class UserApi {
         nat: e['nat'],
         picture: e['picture']['large'],
         name: name,
+        date:
 
       );
     }).toList();
