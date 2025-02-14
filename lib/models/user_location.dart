@@ -18,7 +18,7 @@ class LocationCoordinate {
   LocationCoordinate({
 
     required this.number,
-    re
+    required this.name,
 })
 }
 
