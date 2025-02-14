@@ -38,7 +38,8 @@ class UserApi {
         nat: e['nat'],
         picture: e['picture']['large'],
         name: name,
-        dob: date
+        dob: dob,
+        location: location
 
       );
     }).toList();
