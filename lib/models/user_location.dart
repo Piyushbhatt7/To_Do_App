@@ -17,11 +17,17 @@ class LocationCoordinate {
 
   LocationCoordinate({
 
-    required this.number,
-    required this.name,
+
 });
 }
 
 class LocationTimezoneCoordinate {}
 
-class LocationStreet{}
+class LocationStreet{
+  final int number;
+  final String name;
+
+  LocationStreet({
+
+});
+}
