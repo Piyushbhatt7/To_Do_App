@@ -14,6 +14,11 @@ class LocationCoordinate {
 
   final int number;
   final String name;
+
+  LocationCoordinate({
+
+    required
+})
 }
 
 class LocationTimezoneCoordinate {}
