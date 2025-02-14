@@ -8,6 +8,11 @@ class UserLocation {
   final LocationCoordinate coordinates;
   final LocationTimezoneCoordinate timezone;
 
+  UserLocation({
+
+    required this.city,
+})
+
 }
 
 class LocationStreet{
