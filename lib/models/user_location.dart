@@ -17,7 +17,7 @@ class LocationCoordinate {
 
   LocationCoordinate({
 
-
+     required this.latitude,
 });
 }
 
