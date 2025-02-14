@@ -10,6 +10,17 @@ class UserLocation {
 
 }
 
+class LocationStreet{
+  final int number;
+  final String name;
+
+  LocationStreet({
+
+    required this.number,
+    required this.name,
+  });
+}
+
 class LocationCoordinate {
 
     final String latitude;
@@ -24,13 +35,3 @@ class LocationCoordinate {
 
 class LocationTimezoneCoordinate {}
 
-class LocationStreet{
-  final int number;
-  final String name;
-
-  LocationStreet({
-
-    required this.number,
-    required this.name,
-});
-}
