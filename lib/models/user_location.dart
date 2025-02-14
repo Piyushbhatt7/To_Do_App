@@ -16,6 +16,7 @@ class UserLocation {
     required this.postcode,
     required this.street,
     required this.coordinates,
+    required this.timezone,
 });
 
 }
