@@ -40,7 +40,7 @@ class LocationTimezoneCoordinate {
 
   LocationTimezoneCoordinate({
     required this.offset,
-    this.description,
+    required this.description,
 });
 }
 
