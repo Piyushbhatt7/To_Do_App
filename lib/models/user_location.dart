@@ -37,5 +37,10 @@ class LocationTimezoneCoordinate {
 
   final String offset;
   final String description;
+
+  LocationTimezoneCoordinate({
+    this.offset,
+    this.description,
+})
 }
 
