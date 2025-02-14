@@ -14,6 +14,7 @@ class UserLocation {
     required this.state,
     required this.country,
     required this.postcode,
+    required this.street,
 });
 
 }
