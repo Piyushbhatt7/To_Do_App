@@ -39,9 +39,9 @@ class UserApi {
           number: e['location']['street']['number'],
           name:  e['location']['street']['name']
       );
-      final timezone = LocationTimezoneCoordinate(
-          offset: ['offset'],
-          description: ['description']
+      final timezone = LocationTimezone(
+          offset:  e['location']['timezone']['offset'],
+          description: e['location']['timezone']['description']
       );
       final location = UserLocation(
           city: e['location']['city'],

@@ -6,7 +6,7 @@ class UserLocation {
   final String postcode;
   final LocationStreet street;
   final LocationCoordinate coordinates;
-  final LocationTimezoneCoordinate timezone;
+  final LocationTimezone timezone;
 
   UserLocation({
 
@@ -44,12 +44,12 @@ class LocationCoordinate {
 });
 }
 
-class LocationTimezoneCoordinate {
+class LocationTimezone {
 
   final String offset;
   final String description;
 
-  LocationTimezoneCoordinate({
+  LocationTimezone({
     required this.offset,
     required this.description,
 });
