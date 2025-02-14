@@ -32,7 +32,7 @@ class UserApi {
           date: DateTime.parse(date),
       );
       final location = UserLocation(
-          city: ['city'],
+          city: e['location']['city'],
           state: ['state'],
           country: ['country'],
           postcode: ['postcode'],
