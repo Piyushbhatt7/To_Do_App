@@ -33,8 +33,8 @@ class UserApi {
       );
       final location = UserLocation(
           city: e['location']['city'],
-          state: ['state'],
-          country: ['country'],
+          state: e['location']['state'],
+          country: e['location']['country'],
           postcode: ['postcode'],
           street: ['street'],
           coordinates: ['coordinates'],
