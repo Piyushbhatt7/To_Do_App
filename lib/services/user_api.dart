@@ -37,16 +37,20 @@ class UserApi {
       );
       final street = LocationStreet(
           number: e['location']['street']['number'],
-          name: ['name']
+          name:  e['location']['street']['name']
+      );
+      final timezone = LocationTimezoneCoordinate(
+          offset: ['offset'],
+          description: ['description']
       );
       final location = UserLocation(
           city: e['location']['city'],
           state: e['location']['state'],
           country: e['location']['country'],
           postcode: e['location']['postcode'].toString(),
-          street: e['location']['street'],
-          coordinates: e['location']['coordinates'],
-          timezone: e['location']['timezone']
+          street: street,
+          coordinates: coordinates,
+          timezone: timezone,
       );
       return User(
         cell: e['cell'],
