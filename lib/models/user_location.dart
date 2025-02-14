@@ -13,6 +13,7 @@ class UserLocation {
 class LocationCoordinate {
 
     final String latitude;
+    final String longitude;
 
   LocationCoordinate({
 
