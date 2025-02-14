@@ -29,5 +29,7 @@ class LocationStreet{
 
   LocationStreet({
 
+    required this.number,
+    required this.name,
 });
 }
