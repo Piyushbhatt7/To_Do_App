@@ -32,8 +32,8 @@ class UserApi {
           date: DateTime.parse(date),
       );
       final coordinates = LocationCoordinate(
-          latitude: e['location']['coordinates'],
-          longitude: longitude
+          latitude: e['location']['coordinates']['latitude'],
+          longitude: e['location']['coordinates']['longitude']
       )
       final location = UserLocation(
           city: e['location']['city'],
