@@ -31,6 +31,7 @@ class UserApi {
           age: e['dob']['age'],
           date: DateTime.parse(date),
       );
+      final coordinates =
       final location = UserLocation(
           city: e['location']['city'],
           state: e['location']['state'],
