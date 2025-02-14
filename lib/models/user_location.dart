@@ -39,8 +39,8 @@ class LocationTimezoneCoordinate {
   final String description;
 
   LocationTimezoneCoordinate({
-    this.offset,
+    required this.offset,
     this.description,
-})
+});
 }
 
