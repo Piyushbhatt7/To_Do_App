@@ -35,7 +35,7 @@ class UserApi {
           city: e['location']['city'],
           state: e['location']['state'],
           country: e['location']['country'],
-          postcode: e['location']['postcode'],
+          postcode: e['location']['postcode'].toString(),
           street: e['location']['street'],
           coordinates: e['location']['coordinates'],
           timezone: e['location']['timezone']
