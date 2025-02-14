@@ -41,7 +41,7 @@ class UserApi {
       );
       final timezone = LocationTimezone(
           offset:  e['location']['timezone']['offset'],
-          description: e['location']['timezone']['description']
+          description: e['location']['timezone'] ['description']
       );
       final location = UserLocation(
           city: e['location']['city'],
