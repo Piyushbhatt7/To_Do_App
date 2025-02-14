@@ -34,9 +34,9 @@ class UserApi {
       final location = UserLocation(
           city: ['city'],
           state: ['state'],
-          country: country,
-          postcode: postcode,
-          street: street,
+          country: ['country'],
+          postcode: ['postcode'],
+          street: ['street'],
           coordinates: coordinates,
           timezone: timezone
       )
