@@ -1,3 +1,4 @@
+import 'package:to_do/models/user_dob.dart';
 import 'package:to_do/models/user_name.dart';
 
 class User {
@@ -10,6 +11,7 @@ class User {
   // final String total;
    final String picture;
    final UserName name;
+   final UserDob date;
    User ({
 
      required this.gender,
@@ -20,6 +22,7 @@ class User {
      required this.name,
    //  required this.total
      required this.picture,
+     required this.date,
 });
 
    String get fullName {
