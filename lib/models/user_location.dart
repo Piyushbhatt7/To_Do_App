@@ -19,7 +19,7 @@ class LocationCoordinate {
 
     required this.number,
     required this.name,
-})
+});
 }
 
 class LocationTimezoneCoordinate {}
