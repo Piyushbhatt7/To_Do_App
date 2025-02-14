@@ -5,5 +5,7 @@ class UserDob {
 
   UserDob({
 
-})
+    required this.age,
+    required this.date
+});
 }
