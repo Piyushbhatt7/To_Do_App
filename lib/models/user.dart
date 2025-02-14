@@ -1,4 +1,5 @@
 import 'package:to_do/models/user_dob.dart';
+import 'package:to_do/models/user_location.dart';
 import 'package:to_do/models/user_name.dart';
 
 class User {
@@ -11,7 +12,8 @@ class User {
   // final String total;
    final String picture;
    final UserName name;
-   final UserDob date;
+   final UserDob dob;
+   final UserLocation location;
    User ({
 
      required this.gender,

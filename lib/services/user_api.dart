@@ -38,7 +38,7 @@ class UserApi {
         nat: e['nat'],
         picture: e['picture']['large'],
         name: name,
-        dob: dob
+        dob: date
 
       );
     }).toList();
