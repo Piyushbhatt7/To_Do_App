@@ -13,7 +13,8 @@ class UserLocation {
     required this.city,
     required this.state,
     required this.country,
-})
+    required this.postcode,
+});
 
 }
 
