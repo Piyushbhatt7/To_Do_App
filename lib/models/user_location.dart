@@ -18,6 +18,7 @@ class LocationCoordinate {
   LocationCoordinate({
 
      required this.latitude,
+    required this.longitude,
 });
 }
 
