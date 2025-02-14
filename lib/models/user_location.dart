@@ -4,6 +4,11 @@ class UserLocation {
   final String state;
   final String country;
   final String postcode;
-  final String coordinates;
+  final LocationCoordinate coordinates;
+  final String city;
+
+}
+
+class LocationCoordinate {
 
 }
