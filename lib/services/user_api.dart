@@ -34,7 +34,11 @@ class UserApi {
       final coordinates = LocationCoordinate(
           latitude: e['location']['coordinates']['latitude'],
           longitude: e['location']['coordinates']['longitude']
-      )
+      );
+      final street = LocationStreet(
+          number: e['location']['street']['number'],
+          name: ['name']
+      );
       final location = UserLocation(
           city: e['location']['city'],
           state: e['location']['state'],
@@ -43,7 +47,7 @@ class UserApi {
           street: e['location']['street'],
           coordinates: e['location']['coordinates'],
           timezone: e['location']['timezone']
-      )
+      );
       return User(
         cell: e['cell'],
         email: e['email'],
