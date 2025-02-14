@@ -35,6 +35,6 @@ class LocationCoordinate {
 
 class LocationTimezoneCoordinate {
 
-  final
+  final String offset;
 }
 
