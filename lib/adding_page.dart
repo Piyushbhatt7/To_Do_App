@@ -56,7 +56,7 @@ class _AddingTodoPageState extends State<AddingTodoPage> {
   {
     // Get the data from from
      final title = titleController.text;
-
+     final description = descriptionController.text;
     // Submit data to the server
     // Show success or fail message based on status
 
