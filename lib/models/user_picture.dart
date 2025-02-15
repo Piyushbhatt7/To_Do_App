@@ -8,5 +8,12 @@ class UserPicture {
     required this.large,
     required this.medium,
     required this.small
-})
+});
+
+  factory UserPicture.fromMap(Map<String, dynamic> json)
+  {
+    return UserPicture(
+      large: e['picture']['large']
+    )
+  }
 }
