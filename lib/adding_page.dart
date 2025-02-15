@@ -58,8 +58,8 @@ class _AddingTodoPageState extends State<AddingTodoPage> {
      final title = titleController.text;
      final description = descriptionController.text;
      final body = {
-       "title": "Task Last",
-       "description": "Description Last",
+       "title": title
+       "description": description,
        "is_completed": true
      };
     // Submit data to the server
