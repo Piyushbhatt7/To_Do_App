@@ -11,7 +11,7 @@ class UserApi {
 
   static Future<List<User>> fetchUsers() async
   {
-   // print('Fetchusers called');
+    // print('Fetchusers called');
     const url = 'https://randomuser.me/api/?results=50';
     final uri = Uri.parse(url);
     final response = await http.get(uri);
@@ -21,4 +21,6 @@ class UserApi {
     final user = results.map((e) {
 
     }).toList();
+    return users;
+  }
 }
