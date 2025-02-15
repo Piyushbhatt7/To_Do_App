@@ -14,6 +14,9 @@ class _AddingTodoPageState extends State<AddingTodoPage> {
       appBar: AppBar(
         title: Text('Add Todo'),
       ),
+      body: ListView(
+
+      ),
     );
   }
 }
