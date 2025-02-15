@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:to_do/Practice%20APIs/postapi.dart';
 import 'package:to_do/Practice%20APIs/putapi.dart';
 import 'package:to_do/screen/home.dart';
+import 'package:to_do/todo_list.dart';
 
 import 'Practice APIs/getapi.dart';
 
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: TodoList(),
     );
 
   }
