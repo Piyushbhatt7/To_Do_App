@@ -26,6 +26,7 @@ class _AddingTodoPageState extends State<AddingTodoPage> {
                decoration: InputDecoration(
                  hintText: 'Description',
                ),
+            keyboardType: TextInputType.multiline,
             minLines: 5,
             maxLines: 8,
           ),
