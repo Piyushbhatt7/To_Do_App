@@ -80,10 +80,6 @@ class User {
    //  users = transform;
   // return user;
 
-
-
-
-
    String get fullName {
      return '${name.title} ${name.first} ${name.last}';
    }
