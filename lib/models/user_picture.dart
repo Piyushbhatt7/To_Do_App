@@ -14,7 +14,7 @@ class UserPicture {
   {
     return UserPicture(
       large: ['large'],
-        medium: ['medium'],
+      medium: ['medium'],
       small: json['small'],
     )
   }
