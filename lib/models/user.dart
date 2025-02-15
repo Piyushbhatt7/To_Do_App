@@ -1,6 +1,7 @@
 import 'package:to_do/models/user_dob.dart';
 import 'package:to_do/models/user_location.dart';
 import 'package:to_do/models/user_name.dart';
+import 'package:to_do/models/user_picture.dart';
 
 class User {
 
@@ -64,11 +65,7 @@ class User {
        timezone: timezone,
      );
 
-     final picture = UserPicture(
-       large: e['picture']['large'],
-       medium: e['picture']['medium'],
-       thumbnail: e['picture']['thumbnail']
-     );
+     final picture = UserPicture.fromMap(e['picture']);
      return User(
          cell: e['cell'],
          email: e['email'],
