@@ -75,17 +75,16 @@ class User {
          location: location
 
      );
-   }).toList();
+   }   //.toList();
 
    //  users = transform;
-   return user;
+  // return user;
 
 
 }
 
 
    String get fullName {
-
      return '${name.title} ${name.first} ${name.last}';
    }
 
