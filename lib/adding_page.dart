@@ -20,6 +20,7 @@ class _AddingTodoPageState extends State<AddingTodoPage> {
         padding: EdgeInsets.all(2),
         children: [
           TextField(
+            controller: titleController,
              decoration: InputDecoration(
                hintText: 'Title',
              ),
