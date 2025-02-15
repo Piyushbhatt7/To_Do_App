@@ -28,7 +28,7 @@ class User {
      required this.location,
 });
 
-   factory User.fromMap
+   factory User.fromMap(Map<String, dynamic> json)
 
    String get fullName {
 
