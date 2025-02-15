@@ -31,6 +31,11 @@ class _AddingTodoPageState extends State<AddingTodoPage> {
             minLines: 5,
             maxLines: 8,
           ),
+
+          ElevatedButton(
+              onPressed: onPressed,
+              child: child
+          )
         ],
       ),
     );
