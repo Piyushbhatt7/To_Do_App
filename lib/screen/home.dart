@@ -1,10 +1,8 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
 import 'package:to_do/models/user.dart';
 import 'package:to_do/services/user_api.dart';
 
-import '../models/user_name.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -55,7 +53,7 @@ class _HomeScreenState extends State<HomeScreen> {
       },),
 
         appBar: AppBar(
-          title: Text("REST APIs call"),
+          title: const Text("REST APIs call"),
         ),
 
 
@@ -70,5 +68,4 @@ class _HomeScreenState extends State<HomeScreen> {
     });
   }
   }
-
 
