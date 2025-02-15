@@ -28,6 +28,8 @@ class User {
      required this.location,
 });
 
+   factory User.fromMap
+
    String get fullName {
 
      return '${name.title} ${name.first} ${name.last}';
