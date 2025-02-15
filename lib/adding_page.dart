@@ -17,7 +17,9 @@ class _AddingTodoPageState extends State<AddingTodoPage> {
       body: ListView(
         children: [
           TextField(
-
+             decoration: InputDecoration(
+               hintText: 'Title',
+             ),
           ),
 
           TextField(
