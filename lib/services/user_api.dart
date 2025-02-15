@@ -1,10 +1,7 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
-import 'package:to_do/models/user_dob.dart';
-import 'package:to_do/models/user_location.dart';
-
 import '../models/user.dart';
-import '../models/user_name.dart';
+
 
 class UserApi {
 
