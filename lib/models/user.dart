@@ -63,6 +63,10 @@ class User {
        coordinates: coordinates,
        timezone: timezone,
      );
+
+     final picture = UserPicture(
+       large: e['picture']['large']
+     )
      return User(
          cell: e['cell'],
          email: e['email'],
