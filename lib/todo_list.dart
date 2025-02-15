@@ -17,9 +17,12 @@ class _TodoListState extends State<TodoList> {
            ),
          ),
 
-      floatingActionButton: FloatingActionButton(onPressed: (){
-
-      }),
+      floatingActionButton: FloatingActionButton.extended(
+        onPressed: (){
+            
+      },
+      label: Text('Add To do list'),
+      ),
     );
   }
 }
