@@ -10,6 +10,10 @@ class AddingTodoPage extends StatefulWidget {
 class _AddingTodoPageState extends State<AddingTodoPage> {
   @override
   Widget build(BuildContext context) {
-    return  Scaffold();
+    return  Scaffold(
+      appBar: AppBar(
+        title: Text('Add Todo'),
+      ),
+    );
   }
 }
