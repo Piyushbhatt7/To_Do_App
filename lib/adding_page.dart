@@ -32,13 +32,15 @@ class _AddingTodoPageState extends State<AddingTodoPage> {
             maxLines: 8,
           ),
 
+          SizedBox(width: 20,),
+
           ElevatedButton(
               onPressed: ()
               {
 
               },
               child: Text(
-
+                 'Submit'
               )
           )
         ],
