@@ -65,15 +65,17 @@ class User {
      );
 
      final picture = UserPicture(
-       large: e['picture']['large']
-     )
+       large: e['picture']['large'],
+       medium: e['picture']['medium'],
+       thumbnail: e['picture']['thumbnail']
+     );
      return User(
          cell: e['cell'],
          email: e['email'],
          phone: e['phone'],
          gender: e['gender'],
          nat: e['nat'],
-         picture: e['picture']['large'],
+         picture: picture,
          name: name,
          dob: dob,
          location: location
