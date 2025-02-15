@@ -8,6 +8,8 @@ class AddingTodoPage extends StatefulWidget {
 }
 
 class _AddingTodoPageState extends State<AddingTodoPage> {
+  TextEditingController titleController = TextEditingController();
+  TextEditingController descriptionController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
@@ -51,7 +53,10 @@ class _AddingTodoPageState extends State<AddingTodoPage> {
   void submitData()
   {
     // Get the data from from
+    // final
     // Submit data to the server
-    // Show success or fall
+    // Show success or fail message based on status
+
+
   }
 }
