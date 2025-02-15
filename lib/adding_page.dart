@@ -60,7 +60,8 @@ class _AddingTodoPageState extends State<AddingTodoPage> {
      final body = {
        "title": "Task Last",
        "description": "Description Last",
-     }
+       "is_completed": true
+     };
     // Submit data to the server
     // Show success or fail message based on status
 
