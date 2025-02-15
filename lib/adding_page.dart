@@ -23,7 +23,9 @@ class _AddingTodoPageState extends State<AddingTodoPage> {
           ),
 
           TextField(
-
+               decoration: InputDecoration(
+                 hintText: 'Description'
+               ),
           ),
         ],
       ),
