@@ -76,7 +76,6 @@ class User {
          name: name,
          dob: dob,
          location: location
-
      );
    }   //.toList();
 

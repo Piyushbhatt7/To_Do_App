@@ -6,7 +6,7 @@ import '../models/user.dart';
 class UserApi {
 
 
-  static Future<List<User>> fetchUsers() async
+  static Future<List<User>> fetchUsers(Future<List<User>> users) async
   {
     // print('Fetchusers called');
     const url = 'https://randomuser.me/api/?results=50';
