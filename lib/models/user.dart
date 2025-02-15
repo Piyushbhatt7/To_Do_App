@@ -81,7 +81,7 @@ class User {
   // return user;
 
 
-}
+
 
 
    String get fullName {
