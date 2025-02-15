@@ -19,7 +19,7 @@ class UserApi {
     final json = jsonDecode(body);
     final results = json['results'] as List<dynamic>;
     final user = results.map((e) {
-
+    return User.fromMap(e);
     }).toList();
     return users;
   }
