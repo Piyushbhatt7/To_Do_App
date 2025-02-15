@@ -18,7 +18,11 @@ class _AddingTodoPageState extends State<AddingTodoPage> {
         children: [
           TextField(
 
-          )
+          ),
+
+          TextField(
+
+          ),
         ],
       ),
     );
