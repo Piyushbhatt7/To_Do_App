@@ -11,7 +11,9 @@ class _TodoListState extends State<TodoList> {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-
+         appBar: AppBar(
+           title: Text(data),
+         ),
     );
   }
 }
