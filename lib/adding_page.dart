@@ -47,4 +47,11 @@ class _AddingTodoPageState extends State<AddingTodoPage> {
       ),
     );
   }
+
+  void submitData()
+  {
+    // Get the data from from
+    // Submit data to the server
+    // Show success or fall
+  }
 }
