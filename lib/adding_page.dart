@@ -24,8 +24,10 @@ class _AddingTodoPageState extends State<AddingTodoPage> {
 
           TextField(
                decoration: InputDecoration(
-                 hintText: 'Description'
+                 hintText: 'Description',
                ),
+            minLines: 5,
+            maxLines: 8,
           ),
         ],
       ),
