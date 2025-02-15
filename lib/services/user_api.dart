@@ -20,5 +20,5 @@ class UserApi {
     final results = json['results'] as List<dynamic>;
     final user = results.map((e) {
 
-    }
+    }).toList();
 }
