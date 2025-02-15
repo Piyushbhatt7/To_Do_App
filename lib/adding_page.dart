@@ -33,8 +33,13 @@ class _AddingTodoPageState extends State<AddingTodoPage> {
           ),
 
           ElevatedButton(
-              onPressed: onPressed,
-              child: child
+              onPressed: ()
+              {
+
+              },
+              child: Text(
+
+              )
           )
         ],
       ),
