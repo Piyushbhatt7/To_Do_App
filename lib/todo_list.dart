@@ -12,7 +12,9 @@ class _TodoListState extends State<TodoList> {
   Widget build(BuildContext context) {
     return  Scaffold(
          appBar: AppBar(
-           title: Text(data),
+           title: Text(
+
+           ),
          ),
     );
   }
