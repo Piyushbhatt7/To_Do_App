@@ -31,7 +31,10 @@ class _TodoListState extends State<TodoList> {
 
       body: ListView.builder(
 
-        itemBuilder: ,
+        itemBuilder: (context, index)
+        {
+
+        },
       ),
 
       floatingActionButton: FloatingActionButton.extended(
