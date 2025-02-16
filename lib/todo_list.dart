@@ -30,7 +30,7 @@ class _TodoListState extends State<TodoList> {
          ),
 
       body: ListView.builder(
-
+        itemCount: items.length,
         itemBuilder: (context, index)
         {
            return ListTile(
