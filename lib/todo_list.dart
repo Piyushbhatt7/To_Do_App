@@ -33,10 +33,12 @@ class _TodoListState extends State<TodoList> {
         itemCount: items.length,
         itemBuilder: (context, index)
         {
-          final item = items[index];
+          final item = items[index] as Map;
            return ListTile(
-             title: Text('Sample Text'),
-           )
+             leading: Text('${index + 1}'),
+             title: Text(item['title']),
+             subtitle: Text(item['description']),
+           );
         },
       ),
 
