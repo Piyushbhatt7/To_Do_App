@@ -17,7 +17,7 @@ class _AddingTodoPageState extends State<AddingTodoPage> {
         title: Text('Add Todo'),
       ),
       body: ListView(
-        padding: EdgeInsets.all(2),
+        padding: EdgeInsets.all(5),
         children: [
           TextField(
             controller: titleController,
@@ -36,7 +36,7 @@ class _AddingTodoPageState extends State<AddingTodoPage> {
             maxLines: 8,
           ),
 
-          SizedBox(width: 20,),
+          SizedBox(height: 20,),
 
           ElevatedButton(
               onPressed: ()

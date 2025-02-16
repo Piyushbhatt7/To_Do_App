@@ -1,3 +1,4 @@
+/*
 import 'package:to_do/models/user_dob.dart';
 import 'package:to_do/models/user_location.dart';
 import 'package:to_do/models/user_name.dart';
@@ -72,7 +73,7 @@ class User {
          phone: e['phone'],
          gender: e['gender'],
          nat: e['nat'],
-         picture: picture,
+         //picture: picture,
          name: name,
          dob: dob,
          location: location
@@ -88,3 +89,4 @@ class User {
 
 }
 
+*/
