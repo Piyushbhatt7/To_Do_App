@@ -29,6 +29,7 @@ class _AddingTodoPageState extends State<AddingTodoPage> {
           TextField(
             controller: descriptionController,
                decoration: InputDecoration(
+
                  hintText: 'Description',
                ),
             keyboardType: TextInputType.multiline,
@@ -41,7 +42,7 @@ class _AddingTodoPageState extends State<AddingTodoPage> {
           ElevatedButton(
               onPressed: ()
               {
-
+                submitData();
               },
               child: Text(
                  'Submit'
