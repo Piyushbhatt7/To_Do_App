@@ -33,7 +33,9 @@ class _TodoListState extends State<TodoList> {
 
         itemBuilder: (context, index)
         {
-
+           return ListTile(
+             title: Text('Sample Text'),
+           )
         },
       ),
 
