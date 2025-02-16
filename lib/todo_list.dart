@@ -32,4 +32,9 @@ class _TodoListState extends State<TodoList> {
 
      Navigator.push(context, route);
   }
+
+  Future<void> fetchTodo() async {
+
+    final url =  '';
+  }
 }
