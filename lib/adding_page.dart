@@ -65,7 +65,7 @@ class _AddingTodoPageState extends State<AddingTodoPage> {
     // Submit data to the server // 13:20
      final url = 'https://api.nstack.in/v1/todos';
      final uri = Uri.parse(url);
-     final response = await http.post(uri);
+     final response = await http.post(uri,body: body);
     // Show success or fail message based on status
 
 
