@@ -16,6 +16,7 @@ class _AddingTodoPageState extends State<AddingTodoPage> {
   Widget build(BuildContext context) {
     return  Scaffold(
       appBar: AppBar(
+
         title: Text('Add Todo'),
       ),
       body: ListView(
@@ -91,7 +92,10 @@ class _AddingTodoPageState extends State<AddingTodoPage> {
         print(response.body);
     }
 
+  }
 
+  void showSuccessMessage()
+  {
 
   }
 }
