@@ -29,7 +29,7 @@ class _AddingTodoPageState extends State<AddingTodoPage> {
           ),
 
           Padding(
-            padding: const EdgeInsets.only(top: 5.0),
+            padding: const EdgeInsets.only(top: 10.0),
             child: TextField(
               controller: descriptionController,
                  decoration: InputDecoration(
