@@ -63,6 +63,7 @@ class _AddingTodoPageState extends State<AddingTodoPage> {
        "is_completed": false,
      };
     // Submit data to the server // 13:20
+    http.post(url)
     // Show success or fail message based on status
 
 
