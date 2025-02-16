@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:to_do/adding_page.dart';
-
+import 'package:http/http.dart' as http;
 class TodoList extends StatefulWidget {
   const TodoList({super.key});
 
@@ -36,5 +36,7 @@ class _TodoListState extends State<TodoList> {
   Future<void> fetchTodo() async {
 
     final url =  'https: //api.nstack.in/v1/todos?page=1&limit=10';
+    final uri = Uri.parse(url);
+    final response =
   }
 }
