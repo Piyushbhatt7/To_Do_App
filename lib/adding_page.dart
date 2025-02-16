@@ -90,7 +90,7 @@ class _AddingTodoPageState extends State<AddingTodoPage> {
 
     else {
         print('Failed');
-        print(response.body);
+        showErrorMessage('Creation failed');
     }
 
   }
