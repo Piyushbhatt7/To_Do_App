@@ -72,7 +72,7 @@ class _AddingTodoPageState extends State<AddingTodoPage> {
      final response = await http.post(uri, body: jsonEncode(body));
     // Show success or fail message based on status
     
-    print(response);
+    print(response.statusCode);
 
 
   }
