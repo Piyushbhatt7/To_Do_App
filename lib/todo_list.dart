@@ -33,6 +33,7 @@ class _TodoListState extends State<TodoList> {
         itemCount: items.length,
         itemBuilder: (context, index)
         {
+          final item = items[index];
            return ListTile(
              title: Text('Sample Text'),
            )
