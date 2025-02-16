@@ -53,6 +53,10 @@ class _TodoListState extends State<TodoList> {
 
       final json = jsonDecode(response.body) as Map;
       final result = json['items'] as List;
+
+      setState(() {
+        items;
+      });
     }
 
     else {
