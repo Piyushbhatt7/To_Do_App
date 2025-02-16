@@ -51,7 +51,11 @@ class _TodoListState extends State<TodoList> {
     if(response.statusCode == 200){
 
       final json = jsonDecode(response.body) as Map;
-      final result = json['items'];
+      final result = json['items'] as List;
+    }
+
+    else {
+
     }
     print(response.body);
   }
