@@ -19,7 +19,7 @@ class _AddingTodoPageState extends State<AddingTodoPage> {
         title: Text('Add Todo'),
       ),
       body: ListView(
-        padding: EdgeInsets.only(top: 2.0),
+        padding: EdgeInsets.only(top: 5.0, left: 12.0),
         children: [
           TextField(
             controller: titleController,
