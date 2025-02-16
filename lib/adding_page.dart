@@ -71,7 +71,7 @@ class _AddingTodoPageState extends State<AddingTodoPage> {
        "is_completed": false,
      };
     // Submit data to the server // 13:20
-     final url = 'https://api.nstack.in/v1/todos';
+     final url = 'https://api.nstack.in/v1/todos?page=1&limit=10';
      final uri = Uri.parse(url);
      final response = await http.post(
          uri,
@@ -87,7 +87,7 @@ class _AddingTodoPageState extends State<AddingTodoPage> {
         titleController.text = '';
         descriptionController.text = '';
         print('Success');
-        showSuccessMessage('creation success');
+        showSuccessMessage('Creation Success');
       }
 
     else {
