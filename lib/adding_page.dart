@@ -28,15 +28,18 @@ class _AddingTodoPageState extends State<AddingTodoPage> {
              ),
           ),
 
-          TextField(
-            controller: descriptionController,
-               decoration: InputDecoration(
+          Padding(
+            padding: const EdgeInsets.only(top: 5.0),
+            child: TextField(
+              controller: descriptionController,
+                 decoration: InputDecoration(
 
-                 hintText: 'Description',
-               ),
-            keyboardType: TextInputType.multiline,
-            minLines: 5,
-            maxLines: 8,
+                   hintText: 'Description',
+                 ),
+              keyboardType: TextInputType.multiline,
+              minLines: 5,
+              maxLines: 8,
+            ),
           ),
 
           SizedBox(height: 20,),
