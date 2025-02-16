@@ -52,7 +52,7 @@ class _AddingTodoPageState extends State<AddingTodoPage> {
     );
   }
 
-  void submitData()
+  Future <void> submitData() async
   {
     // Get the data from from
      final title = titleController.text;
