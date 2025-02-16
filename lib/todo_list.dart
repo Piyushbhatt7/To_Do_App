@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:to_do/adding_page.dart';
 import 'package:http/http.dart' as http;
@@ -48,6 +50,8 @@ class _TodoListState extends State<TodoList> {
     final response = await http.get(uri);
     if(response.statusCode == 200){
 
+      final json = jsonDecode(response.body) as Map;
+      final result = json['items'];
     }
     print(response.body);
   }
