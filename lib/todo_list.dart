@@ -55,7 +55,7 @@ class _TodoListState extends State<TodoList> {
       final result = json['items'] as List;
 
       setState(() {
-        items;
+        items = result;
       });
     }
 
