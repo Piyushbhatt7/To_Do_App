@@ -84,6 +84,8 @@ class _AddingTodoPageState extends State<AddingTodoPage> {
     
     if(response.statusCode == 201)
       {
+        titleController.text = '';
+        descriptionController.text = '';
         print('Success');
         showSuccessMessage('creation success');
       }
