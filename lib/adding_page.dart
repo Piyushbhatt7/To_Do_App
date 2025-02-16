@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 class AddingTodoPage extends StatefulWidget {
@@ -67,7 +69,7 @@ class _AddingTodoPageState extends State<AddingTodoPage> {
     // Submit data to the server // 13:20
      final url = 'https://api.nstack.in/v1/todos';
      final uri = Uri.parse(url);
-     final response = await http.post(uri, body: json);
+     final response = await http.post(uri, body: jsonEncode(object));
     // Show success or fail message based on status
     
     print(response);
