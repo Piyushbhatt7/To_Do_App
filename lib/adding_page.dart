@@ -33,7 +33,6 @@ class _AddingTodoPageState extends State<AddingTodoPage> {
             child: TextField(
               controller: descriptionController,
                  decoration: InputDecoration(
-
                    hintText: 'Description',
                  ),
               keyboardType: TextInputType.multiline,
