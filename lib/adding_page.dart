@@ -100,4 +100,11 @@ class _AddingTodoPageState extends State<AddingTodoPage> {
     final snackBar = SnackBar(content: Text(message),);
     ScaffoldMessenger.of(context).showSnackBar(snackBar);
   }
+
+
+  void showErrorMessage(String message)
+  {
+    final snackBar = SnackBar(content: Text(message),);
+    ScaffoldMessenger.of(context).showSnackBar(snackBar);
+  }
 }
