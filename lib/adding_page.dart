@@ -96,6 +96,7 @@ class _AddingTodoPageState extends State<AddingTodoPage> {
 
   void showSuccessMessage()
   {
+    final snackBar = SnackBar(content: Text(data),)
     ScaffoldMessenger.of(context).showSnackBar(snackBar);
   }
 }
