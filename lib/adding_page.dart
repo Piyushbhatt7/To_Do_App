@@ -104,7 +104,10 @@ class _AddingTodoPageState extends State<AddingTodoPage> {
 
   void showErrorMessage(String message)
   {
-    final snackBar = SnackBar(content: Text(message),);
+    final snackBar = SnackBar(
+      content: Text(message),
+      backgroundColor: Colors.red,
+    );
     ScaffoldMessenger.of(context).showSnackBar(snackBar);
   }
 }
