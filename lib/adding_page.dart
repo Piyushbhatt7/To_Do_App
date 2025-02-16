@@ -67,6 +67,8 @@ class _AddingTodoPageState extends State<AddingTodoPage> {
      final uri = Uri.parse(url);
      final response = await http.post(uri,body: body);
     // Show success or fail message based on status
+    
+    print(response);
 
 
   }
