@@ -85,6 +85,7 @@ class _AddingTodoPageState extends State<AddingTodoPage> {
     if(response.statusCode == 201)
       {
         print('Success');
+        showSuccessMessage('');
       }
 
     else {
