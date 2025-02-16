@@ -12,6 +12,7 @@ class TodoList extends StatefulWidget {
 
 class _TodoListState extends State<TodoList> {
 
+  List items = [];
   @override
   void initState() {
     // TODO: implement initState
