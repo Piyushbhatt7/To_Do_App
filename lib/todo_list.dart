@@ -35,7 +35,9 @@ class _TodoListState extends State<TodoList> {
         {
           final item = items[index] as Map;
            return ListTile(
-             leading: Text('${index + 1}'),
+             leading: CircleAvatar(
+               child: Text('${index + 1}'),
+             ),
              title: Text(item['title']),
              subtitle: Text(item['description']),
            );
