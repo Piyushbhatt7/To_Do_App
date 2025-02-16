@@ -73,6 +73,7 @@ class _AddingTodoPageState extends State<AddingTodoPage> {
     // Show success or fail message based on status
     
     print(response.statusCode);
+    print(response.body);
 
 
   }
